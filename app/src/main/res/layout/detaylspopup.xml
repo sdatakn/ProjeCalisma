@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollbars="vertical">
+
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_close_24"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+            <TextView
+                android:id="@+id/ililce"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/ilveilce"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/close"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sehirp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/ililce"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/close"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/banksube"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/banka_sube"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/ililce"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subep"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/banksube"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/ililce"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/banktipi"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/banka_tipi"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/banksube"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tipp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/banktipi"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/banksube"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/bankkod"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/banka_kodu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/banktipi"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bankp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/bankkod"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/banktipi"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/adresadi"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/adres_adi"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/bankkod"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adresadip"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/adresadi"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/bankkod"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/adresi"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/adres"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/adresadi"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adresp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/adresadi"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/adresadi"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/postakodu"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/posta_kodu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/adresi"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/postakodp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/postakodu"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/adresi"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/linem"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/of_line"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/postakodu"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/of_linep"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/linem"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/postakodu"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/site"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/of_site"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/linem"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/of_sitep"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/site"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/linem"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/bolgekoor"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/bolge_k"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/site"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bolge_koordinatp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/bolgekoor"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/site"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/atmen"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/en_yakin_atm"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/bolgekoor"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/en_yakin_atmp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="sedatsedatsedatsedatsedatsedatsedatsedatsedatsedatsedat"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@id/atmen"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/bolgekoor"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ProjeEnqura</string>
+
+    <string name="checkinternet">İnternet Bağlantınız Bulunmamaktadır.</string>
+    <string name="errorjson">Hata Bulundu.</string>
+    <string name="jsonnull">Veri Yok. Json Null Geldi.</string>
+    <string name="en_yakin_atm">En Yakın Atm:</string>
+    <string name="yol_tarifi">Yol Tarifi</string>
+    <string name="detaylar">Detaylar</string>
+    <string name="sehirara">Sehir Ara</string>
+    <string name="ilveilce">İl ve İlçe :</string>
+    <string name="banka_sube">Banka Şube :</string>
+    <string name="banka_tipi">Banka Tipi :</string>
+    <string name="banka_kodu">Banka Kodu :</string>
+    <string name="adres_adi">Adres Adı :</string>
+    <string name="adres">Adres :</string>
+    <string name="posta_kodu">Posta Kodu :</string>
+    <string name="of_line">Of Line :</string>
+    <string name="of_site">Of Site :</string>
+    <string name="bolge_k">Bölge K:</string>
+    <string name="error_permission_map">error</string>
+    <string name="okey">Tamamla</string>
+    <string name="reddedildi">Bu özelliği kullanabilmeniz için uygulama ayarlarından konumunuzu aktif hale getiriniz</string>
+    <string name="title_location_permission">Konum İzni</string>
+    <string name="text_location_permission">Konumunuza ihtiyacımız Var</string>
+
+</resources>

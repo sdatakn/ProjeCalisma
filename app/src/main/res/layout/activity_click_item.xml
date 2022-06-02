@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkback"
+    tools:context=".ClickItem">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layoutDirection="rtl"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        android:background="@color/white"
+        android:layout_height="250dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="#D1FACA"
+        android:layout_marginRight="20dp"
+        android:layout_height="450dp">
+
+        <TextView
+            android:id="@+id/sehir1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Ceyhan Şubesi / ADANA"
+            android:textColor="@color/darkback"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ilce"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/sehir1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="Adana/Ceyhan"
+            android:textColor="@color/darkback"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/yatirma"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/ilce"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="Para Çek Yatır"
+            android:textColor="@color/darkback"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/atm"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/yatirma"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_local_atm_24"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/en_yakin_atm"
+            android:textColor="@color/darkback"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/atmdeger"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/yatirma"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/atm"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="ADANA-ADANA / CARREFOUR-SA-ADANA / HASTANELER KAVŞAĞI-ADANA / M1 TEPE-ADANA / MUHTARLAR SİTESİ-ADANA / VİLAYET-TARSUS / ADLİYE-ÇUKUROVA DEVLET HASTANESİ"
+            android:textColor="@color/darkback"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/atmdeger"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/button_shape"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="@string/yol_tarifi"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detayls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="right"
+            android:text="@string/detaylar"
+            android:textColor="@color/darkback"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
